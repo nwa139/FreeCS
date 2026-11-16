@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreeCS - 100% free, 100% fun</title>
+    <meta content="width=device-width, initial-scale=1.0 viewport-fit=cover" name="viewport">
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" rel="stylesheet"
+          type="text/css"/>
+    <script src="store.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+</head>
+<body x-data="">
+<main></main>
+<template x-if="$store.view.getCurrentView.showNav">
+    <nav x-data="{
+        items: [
+            { id: 'home', label: 'Home', icon: 'ph-house' },
+            { id: 'nibbles', label: 'Nibbles', icon: 'ph-cookie' },
+            { id: 'snippets', label: 'Snippets', icon: 'ph-code' },
+            { id: 'certificates', label: 'Certs', icon: 'ph-certificate' },
+            { id: 'settings', label: 'Settings', icon: 'ph-gear-six' }
+        ]
+    }">
+        <template :key="item.id" x-for="item in items">
+            <div :class="{ 'selected': $store.view.getCurrentView.id === item.id }"
+                 @click="$store.view.navigateView(item.id)"
+                 class="nav-item">
+                <i :class="[$store.view.getCurrentView.id === item.id ? 'ph-fill' : 'ph', item.icon]"></i>
+                <p x-text="item.label"></p>
+            </div>
+        </template>
+    </nav>
+</template>
+</body>
+</html>
