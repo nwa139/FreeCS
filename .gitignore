@@ -1,5 +1,6 @@
+# EDITOR stuff
 .idea
 
-webapp/style/.sass-cache
-webapp/style/style.css
-webapp/style/style.css.map
+# NPM stuff
+webapp/node_modules
+webapp/dist
