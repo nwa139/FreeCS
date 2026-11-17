@@ -6,6 +6,11 @@ Alpine.store("view", {
         loadingMessage: "Starting app...",
 
         views: {
+            loading: {
+                id: "loading",
+                title: "Loading...",
+                showNav: false
+            },
             home: {
                 id: "home",
                 title: "Home",
