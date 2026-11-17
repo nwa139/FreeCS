@@ -52,3 +52,46 @@ nav {
         }
     }
 }
+
+#view-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--theme-accent-primary);
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    svg {
+        width: fit-content;
+        height: 40px;
+
+        path {
+            fill: var(--theme-accent-secondary);
+        }
+
+        .spin-outer-circle {
+            transform-origin: center;
+            animation: spin 0.8s ease-out infinite;
+        }
+    }
+
+    p {
+        position: relative;
+        top: 40%;
+        color: var(--theme-accent-secondary);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
