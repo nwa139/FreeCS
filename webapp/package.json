@@ -1,0 +1,30 @@
+{
+  "name": "freecs-webapp",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/nwa139/FreeCS#readme",
+  "bugs": {
+    "url": "https://github.com/nwa139/FreeCS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwa139/FreeCS.git"
+  },
+  "license": "ISC",
+  "author": "Noa Daniel",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npm run sass ./style/style.scss ./style/style.css",
+    "build": "npm run build:css"
+  },
+  "dependencies": {
+    "@phosphor-icons/web": "^2.1.2",
+    "alpinejs": "^3.17.5"
+  },
+  "devDependencies": {
+    "sass": "^1.108.2",
+    "vite": "^8.3.8"
+  }
+}
