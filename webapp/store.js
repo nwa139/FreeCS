@@ -1,6 +1,6 @@
-document.addEventListener("alpine:init", function () {
+import Alpine from 'alpinejs'
 
-    Alpine.store("view", {
+Alpine.store("view", {
         currentView: "home",
 
         views: {
@@ -43,4 +43,3 @@ document.addEventListener("alpine:init", function () {
             }
         }
     });
-});
