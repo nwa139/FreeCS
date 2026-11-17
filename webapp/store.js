@@ -1,7 +1,9 @@
 import Alpine from 'alpinejs'
 
 Alpine.store("view", {
-        currentView: "home",
+        currentView: "loading",
+
+        loadingMessage: "Starting app...",
 
         views: {
             home: {
