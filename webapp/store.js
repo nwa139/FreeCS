@@ -46,7 +46,8 @@ Alpine.store("view", {
             if (this.views[newView]) {
                 this.currentView = newView;
             } else {
-                this.currentView = this.views["home"];
+                this.currentView = "home";
             }
+            this.loadingMessage = "Loading...";
         }
     });
