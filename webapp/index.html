@@ -20,20 +20,15 @@
 <template x-if="$store.view.getCurrentView.showNav">
     <nav x-data="{
         items: [
-            { id: 'home', label: 'Home', icon: 'ph-house' },
-            { id: 'nibbles', label: 'Nibbles', icon: 'ph-cookie' },
-            { id: 'snippets', label: 'Snippets', icon: 'ph-code' },
-            { id: 'certificates', label: 'Certs', icon: 'ph-certificate' },
-            { id: 'settings', label: 'Settings', icon: 'ph-gear-six' }
+            { id: 'home',           icon: 'ph-house' },
+            { id: 'nibbles',        icon: 'ph-cookie' },
+            { id: 'snippets',       icon: 'ph-code' },
+            { id: 'certificates',   icon: 'ph-certificate' },
+            { id: 'settings',       icon: 'ph-gear-six' }
         ]
     }">
         <template :key="item.id" x-for="item in items">
-            <div :class="{ 'selected': $store.view.getCurrentView.id === item.id }"
-                 @click="$store.view.navigateView(item.id)"
-                 class="nav-item">
-                <i :class="[$store.view.getCurrentView.id === item.id ? 'ph-fill' : 'ph', item.icon]"></i>
-                <p x-text="item.label"></p>
-            </div>
+                <i :class="[$store.view.getCurrentView.id === item.id ? 'ph-fill' : 'ph', item.icon, 'nav-item']" @click="$store.view.navigateView(item.id)"></i>
         </template>
     </nav>
 </template>

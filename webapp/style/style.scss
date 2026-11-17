@@ -33,22 +33,12 @@ nav {
     background-color: #151A1E;
 
     .nav-item {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        font-size: 26px;
+        transition: color 0.2s ease-out;
+        color: var(--theme-accent-quaternary);
 
-        &.selected i {
+        &.ph-fill {
             color: var(--theme-accent-primary);
-        }
-
-        i {
-            font-size: 26px;
-            transition: color 0.2s ease-out;
-            color: var(--theme-accent-quaternary);
-        }
-
-        p {
-            font-size: 10px;
         }
     }
 }
