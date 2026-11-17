@@ -15,9 +15,8 @@
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "npm run sass ./style/style.scss ./style/style.css",
-    "build": "npm run build:css"
+    "dev": "vite dev --host=0.0.0.0",
+    "build": "vite run build"
   },
   "dependencies": {
     "@phosphor-icons/web": "^2.1.2",
