@@ -16,6 +16,11 @@
         </div>
     </main>
 </template>
+<template x-if="$store.view.getCurrentView.id === 'debug'">
+    <main id="view-debug">
+            <svg class="loader" xmlns="http://www.w3.org/2000/svg" width="1174.85" height="1180" viewBox="0 0 310.84571 312.20833"><path class="spin-outer-circle" d="M252.00877 59.518232a136.59306 136.59306 0 0 0-193.171079 0 136.59306 136.59306 0 0 0-.000011 193.171098l.000763.00072 38.497747-38.49773-.00075-.00073a82.148031 82.148031 0 0 1 .00076-116.174842 82.148031 82.148031 0 0 1 116.17407-.00001l.00075.00076 38.4985-38.498504z"/><path d="M213.51027 98.016738 97.335442 214.19159a82.148031 82.148031 0 0 0 116.175578 0 82.148031 82.148031 0 0 0-.00075-116.174852"/></svg>
+    </main>
+</template>
 <template x-if="$store.view.getCurrentView.showNav">
     <nav x-data="{
         items: [
