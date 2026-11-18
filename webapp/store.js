@@ -6,9 +6,14 @@ Alpine.store("view", {
         loadingMessage: "Starting app...",
 
         views: {
-            loading: {
-                id: "loading",
-                title: "Loading...",
+            debug: {
+                id: "debug",
+                title: "FreeCS",
+                showNav: true
+            },
+            starting: {
+                id: "starting",
+                title: "FreeCS",
                 showNav: false
             },
             home: {
