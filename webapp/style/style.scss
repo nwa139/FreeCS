@@ -13,7 +13,7 @@ body {
     width: 100dvw;
     height: 100dvh;
     margin: 0;
-    background-color: var(--theme-background-color);
+    background-color: var(--theme-background-color-first);
 }
 
 h1, h2, h3, h5, h6, p {
@@ -24,6 +24,7 @@ h1, h2, h3, h5, h6, p {
 
 main {
     flex-grow: 1;
+    padding: 20px;
 }
 
 nav {
@@ -33,49 +34,37 @@ nav {
     justify-content: space-evenly;
     height: 55px;
     padding: 0 0 25px 0;
-    background-color: #151A1E;
+    background-color: var(--theme-accent-first);
 
     .nav-item {
-        font-size: 26px;
+        font-size: 30px;
+        padding: 5px;
         transition: color 0.2s ease-out;
-        color: var(--theme-accent-quaternary);
+        color: var(--theme-accent-third);
+    }
 
-        &.ph-fill {
-            color: var(--theme-accent-primary);
-        }
+    .selected {
+        color: var(--theme-accent-fourth);
     }
 }
 
-#view-loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--theme-background-color);
+.main-stylized-title {
+    font-size: 32px;
+    font-weight: 700;
 
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    svg {
-        width: fit-content;
-        height: 40px;
-
-        path {
-            fill: var(--theme-accent-primary);
-        }
-
-        .spin-outer-circle {
-            transform-origin: center;
-            animation: spin 0.8s ease-out infinite;
-        }
-    }
-
-    p {
+    span {
         position: relative;
-        top: 40%;
-        color: var(--theme-accent-secondary);
+        display: inline-block;
+
+        &:after {
+            position: absolute;
+            z-index: -1;
+            right: -4px;
+            bottom: 10px;
+            left: -4px;
+            height: calc(100% - 25px);
+            content: "";
+            background-color: var(--theme-accent-first);
+        }
     }
 }
