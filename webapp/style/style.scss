@@ -6,65 +6,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-    justify-content: stretch;
-    width: 100dvw;
-    height: 100dvh;
-    margin: 0;
-    background-color: var(--theme-background-color-first);
+	width: 100dvw;
+	height: 100dvh;
+	margin: 0;
+	background: linear-gradient(to bottom right, var(--theme-background-color-first), var(--theme-background-color-second));
 }
 
 h1, h2, h3, h5, h6, p {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    margin: 0;
-    color: var(--theme-text-primary);
-}
-
-main {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 55px;
-    padding: 0 0 25px 0;
-    background-color: var(--theme-accent-first);
-
-    .nav-item {
-        font-size: 30px;
-        padding: 5px;
-        transition: color 0.2s ease-out;
-        color: var(--theme-accent-third);
-    }
-
-    .selected {
-        color: var(--theme-accent-fourth);
-    }
-}
-
-.main-stylized-title {
-    font-size: 32px;
-    font-weight: 700;
-
-    span {
-        position: relative;
-        display: inline-block;
-
-        &:after {
-            position: absolute;
-            z-index: -1;
-            right: -4px;
-            bottom: 10px;
-            left: -4px;
-            height: calc(100% - 25px);
-            content: "";
-            background-color: var(--theme-accent-first);
-        }
-    }
+	font-family: "Plus Jakarta Sans", sans-serif;
+	margin: 0;
+	color: var(--theme-text-primary);
 }

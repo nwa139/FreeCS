@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+	xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	width="100"
+	height="100"
+	viewBox="0 0 26.458332 26.458333"
+	version="1.1"
+	id="svg1"
+	xml:space="preserve"
+	inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+	xmlns="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="7.579661"
+     inkscape:cx="40.503131"
+     inkscape:cy="51.453488"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+	<defs
+		id="defs1"/>
+	<g
+		id="g2"
+		transform="matrix(1.3080423,0,0,1.3080423,-4.1025801,-4.0695176)"
+		style="stroke:none;stroke-opacity:1;fill:#5500d1;fill-opacity:1"><path
+       id="circle1"
+       style="fill:#5500d1;fill-opacity:1;stroke:none;stroke-width:0.385338;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1"
+       d="m 20.421477,6.1085867 a 10.045615,10.045615 0 0 0 -14.2065959,0 10.045615,10.045615 0 0 0 -9e-7,14.2065963 10.045615,10.045615 0 0 0 5.62e-5,5.3e-5 L 9.046219,17.483954 a 6.041504,6.041504 0 0 1 -5.52e-5,-5.3e-5 6.041504,6.041504 0 0 1 5.59e-5,-8.5439752 6.041504,6.041504 0 0 1 8.5439183,-6e-7 6.041504,6.041504 0 0 1 5.6e-5,5.58e-5 l 2.831338,-2.8313383 a 10.045615,10.045615 0 0 0 -5.5e-5,-5.6e-5 z"
+       inkscape:transform-center-x="24.044317"
+       inkscape:transform-center-y="-21.817991" />
+		<path
+			id="path1"
+			style="fill:#5500d1;fill-opacity:1;stroke:none;stroke-width:0.231687;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1"
+			d="m 17.590194,8.939981 -8.5418453,8.541846 a 6.0399984,6.0399984 0 0 0 8.5419013,0 6.0399984,6.0399984 0 0 0 -5.6e-5,-8.541846 z"/></g></svg>
