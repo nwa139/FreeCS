@@ -9,7 +9,7 @@ body {
 	width: 100dvw;
 	height: 100dvh;
 	margin: 0;
-	background-color: var(--theme-background-color-first);
+	background: linear-gradient(to bottom right, var(--theme-background-color-first), var(--theme-background-color-second));
 }
 
 h1, h2, h3, h5, h6, p {
