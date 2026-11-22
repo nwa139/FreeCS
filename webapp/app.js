@@ -1,12 +1,7 @@
 import "@phosphor-icons/web/regular";
 import "@phosphor-icons/web/fill";
 
-import Alpine from "alpinejs";
-import "./store.js";
-import {init} from "./init";
+import {mount} from "svelte";
+import App from "./App.svelte";
 
-window.Alpine = Alpine;
-
-Alpine.start();
-
-init();
+mount(App, {target: document.body});
