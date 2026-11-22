@@ -4,3 +4,6 @@
 # NPM stuff
 webapp/node_modules
 webapp/dist
+
+# Cloudflare
+webapp/.wrangler
