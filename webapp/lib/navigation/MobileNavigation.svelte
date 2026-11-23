@@ -16,8 +16,7 @@
 		align-items: center;
 		flex-direction: row;
 		justify-content: space-evenly;
-		height: 55px;
-		padding: 0 0 25px 0;
+		height: 60px;
 		background-color: var(--theme-accent-first);
 
 		button {
